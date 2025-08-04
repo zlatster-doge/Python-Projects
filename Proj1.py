@@ -1,0 +1,55 @@
+# Number guessing game 
+# Computer selects a random number from the list and cross ref with user's guess
+
+import random
+
+def fun(r1, r2):
+     rando= random.randint(r1, r2)
+     return rando
+
+def game():
+        print("Enter the lowest digit:")
+        r1= int(input())
+        print("Enter the highest digit:")
+        r2= int(input())
+        rando= fun(r1, r2)
+        counter= 3
+        done= 0
+
+#print("Rando val for ref:", rando)
+
+        while done< counter:
+               done +=1
+               print("Enter your Guess:")
+               ans= int(input())
+
+               if ans ==rando:
+                      print("You guessed right")
+                      break
+     
+               elif done>=counter and rando!= ans:
+                      print("Better luck next time")
+
+               elif ans< rando:
+                      print("Your guess was too low, try again")
+
+               elif ans > rando:
+                      print("Your guess was Too high")
+
+                #print("You have", counter-1, "turns left")            
+
+        print("Do you wish to try again?")
+        again= input()
+        while again == 'Yes':
+               game()
+               again= 'no'
+
+print("Welcome to the number guessing game")
+
+print("Press S to start:")
+start= input()
+
+if start== 'S':
+     game()
+
+print("Thank you  for playing!")  
