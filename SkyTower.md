@@ -1,4 +1,4 @@
-# SkyTech — Walkthrough
+# SkyTower — Walkthrough
 
 **Disclaimer:** This document is a high-level summary of an authorized lab / CTF walk‑through. It intentionally omits exploit payloads, exact commands, and step‑by‑step instructions that could enable unauthorized access. Use only in isolated, authorized environments.
 
