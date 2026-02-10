@@ -1,6 +1,8 @@
-# Number guessing game 
-# Computer selects a random number from the list and cross ref with user's guess
+# Number Guessing Game
 
+Computer selects a random number from the list and cross ref with user's guess
+
+```python
 import random
 
 def fun(r1, r2):
@@ -52,4 +54,5 @@ start= input()
 if start== 'S':
      game()
 
-print("Thank you  for playing!")  
+print("Thank you  for playing!")
+```
